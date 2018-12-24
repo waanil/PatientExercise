@@ -1,0 +1,10 @@
+/Users/anilkumar/Projects/Patient_Demographics/Patient_Demographics/bin/Debug/netcoreapp2.0/Patient_Demographics_RestAPI.deps.json
+/Users/anilkumar/Projects/Patient_Demographics/Patient_Demographics/bin/Debug/netcoreapp2.0/Patient_Demographics_RestAPI.runtimeconfig.json
+/Users/anilkumar/Projects/Patient_Demographics/Patient_Demographics/bin/Debug/netcoreapp2.0/Patient_Demographics_RestAPI.runtimeconfig.dev.json
+/Users/anilkumar/Projects/Patient_Demographics/Patient_Demographics/bin/Debug/netcoreapp2.0/Patient_Demographics_RestAPI.dll
+/Users/anilkumar/Projects/Patient_Demographics/Patient_Demographics/bin/Debug/netcoreapp2.0/Patient_Demographics_RestAPI.pdb
+/Users/anilkumar/Projects/Patient_Demographics/Patient_Demographics/obj/Debug/netcoreapp2.0/Patient_Demographics_RestAPI.csproj.CoreCompileInputs.cache
+/Users/anilkumar/Projects/Patient_Demographics/Patient_Demographics/obj/Debug/netcoreapp2.0/Patient_Demographics_RestAPI.AssemblyInfoInputs.cache
+/Users/anilkumar/Projects/Patient_Demographics/Patient_Demographics/obj/Debug/netcoreapp2.0/Patient_Demographics_RestAPI.AssemblyInfo.cs
+/Users/anilkumar/Projects/Patient_Demographics/Patient_Demographics/obj/Debug/netcoreapp2.0/Patient_Demographics_RestAPI.dll
+/Users/anilkumar/Projects/Patient_Demographics/Patient_Demographics/obj/Debug/netcoreapp2.0/Patient_Demographics_RestAPI.pdb

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Patient_Demographics_Domain.Entities\Patient_Demographics_Domain.csproj" />
+    <ProjectReference Include="..\Patient_Demographics\Patient_Demographics_RestAPI.csproj" />
+    <ProjectReference Include="..\Patient_Demographics_Service.Interfaces\Patient_Demographics_Service.Interfaces.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Mvc.ViewFeatures, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="TestPatientService.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,106 @@
+﻿@page
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Title of the document</title>
+    <style>
+        label {
+            width: 128px;
+        }
+        .form-control {
+            border: none;
+            margin: 9px;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="patientform">
+            <div class="form-control">
+                <label>Forename:</label>
+                <input type="text" name="forename" id="forename">
+            </div>
+            <div class="form-control">
+                <label>    Surname: </label>
+                    <input type="text" name="surname" id="surname">
+            </div>
+            <div class="form-control">
+                <label>                    DOB:</label>
+                    <input type="date" id="dob" name="dob"
+                           min="1900-01-01">
+</div>
+            <div class="form-control">
+                <label>Gender: </label>
+                    <select name="gender" id="gender">
+                        <option value=0>Male</option>
+                        <option value=1>Female</option>
+                        <option value=2>Other</option>
+
+                    </select>
+</div>
+            <div class="form-control">
+                <label>Home Number: </label>
+                    <input type="text" name="homenumber" id ="homenumber">
+</div>
+            <div class="form-control">
+                <label>work Number:</label>
+                    <input type="text" name="worknumber" id="worknumber">
+</div>
+            <div class="form-control">
+                <label>Mobile Number:</label>
+                    <input type="text" name="mobilenumber" id="mobilenumber">
+</div>
+        </form>
+         <div class="form-control">
+            <input type="submit" class="btn btn-primary" value="Submit" id="submitbtn">
+          </div>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("#submitbtn").click(function () {
+            debugger
+
+            var dataObj = {
+                forename: $("#forename").val(),
+                surname: $("#surname").val(),
+                dob: $("#dob").val(),
+                gender: $("#gender").val(),
+                TelephoneNumbers: [
+                    { ContactType: 'homenumber', ContactNumber: $("#homenumber").val() },
+                    { ContactType: 'worknumber', ContactNumber: $("#worknumber").val() },
+                    { ContactType: 'mobilenumber', ContactNumber: $("#mobilenumber").val() }
+                                    ]
+
+            };
+            console.log(dataObj);
+            doPostCall(dataObj);
+      //data_array = $("#patientform").serialize();
+      //alert(data_array);
+        });
+    });
+
+    function doPostCall(dataModel) {
+        var url = "http://localhost:17846/api/Patient";
+        $.ajax({
+            url : url,
+            type: "POST",
+            data: JSON.stringify(dataModel),
+            contentType: 'application/json',
+            success: function (res) {
+                console.log("SUCCESS -> ", res);
+            },
+            error: function (err) {
+                console.log("ERROR -> ", err);
+            }
+            
+        });
+    }
+
+</script>

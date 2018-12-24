@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Patient_Demographics_Domain/1.0.0": {
+        "runtime": {
+          "Patient_Demographics_Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Patient_Demographics_Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
